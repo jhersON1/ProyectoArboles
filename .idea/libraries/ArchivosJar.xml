@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="ArchivosJar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ArchivosJar/jcalendar-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ArchivosJar/swingx-1.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ArchivosJar/PlaceHolder.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ArchivosJar/edisoncorSX.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ArchivosJar/ArbolBin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

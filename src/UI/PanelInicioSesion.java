@@ -49,6 +49,7 @@ public class PanelInicioSesion extends javax.swing.JPanel {
         jSeparator2 = new javax.swing.JSeparator();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jBtnAtras = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(51, 153, 255));
         setPreferredSize(new java.awt.Dimension(700, 500));
@@ -127,6 +128,13 @@ public class PanelInicioSesion extends javax.swing.JPanel {
 
         jLabel2.setText("Contraseña: 1234");
 
+        jBtnAtras.setText("Atras");
+        jBtnAtras.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnAtrasActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -138,6 +146,10 @@ public class PanelInicioSesion extends javax.swing.JPanel {
                     .addComponent(jLabel1)
                     .addComponent(jLabel2))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jBtnAtras)
+                .addGap(24, 24, 24))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -147,7 +159,9 @@ public class PanelInicioSesion extends javax.swing.JPanel {
                 .addComponent(jLabel1)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel2)
-                .addContainerGap(220, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 156, Short.MAX_VALUE)
+                .addComponent(jBtnAtras)
+                .addGap(42, 42, 42))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -177,9 +191,17 @@ public class PanelInicioSesion extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_buttonLoguearActionPerformed
 
+    private void jBtnAtrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnAtrasActionPerformed
+        // TODO add your handling code here:
+       FramePrincipal framePrincipal = new FramePrincipal();
+        framePrincipal.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jBtnAtrasActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton buttonLoguear;
+    private javax.swing.JButton jBtnAtras;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JSeparator jSeparator1;
